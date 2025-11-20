@@ -85,61 +85,40 @@ footer{
 	background-attachment: fixed;
 }
 
-footer, header{
-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+header{
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+footer{
+	box-shadow:  rgba(17, 17, 26, 0.1) 0px -40px 16px, rgba(17, 17, 26, 0.1) 0px -80px 24px, rgba(17, 17, 26, 0.1) 0px -160px 56px;
+}
+
+.projet{
+	margin: 5vh 0 5vh 0 !important;
 }
 	
+/* #cd,
+.headnav {
+  margin-bottom: 300px;
+  transition: none; /* important : on retire les transitions CSS */
+/* }
+
+body.noscroll {
+  overflow: hidden;
+} */ 
+
+
+
+/*
 @keyframes shrinkPadding { 
 	0% { margin: 0px 0px 300px 0px; } 
-	60% { margin: 700px 0px 0px 0px; } 
-	100% { margin: 700px 0px 0px 0px; } 
+	60% { margin: 0px; } 
+	100% { margin: 0px; } 
 } 
 
-header, .headnav, #cd{ 
+.headnav, #cd{ 
 	position: sticky; 
 	animation: shrinkPadding linear both; 
 	animation-timeline: scroll(); 
 	animation-range: 0% 100%; 
 } 
-
-/*
-@keyframes footerPadding { 
-	0% { padding: 500px 0px 200px 0px; } 
-	100% { padding: 0px 0px 0px 0px; } 
-} 
-
-.contact { 
-	position: sticky; 
-	animation: footerPadding linear both; 
-	animation-timeline: scroll(); 
-	animation-range: 0% 100%; 
-}
-
-
-
-@scroll-timeline headerScroll {
-  source: selector(header);
-}
-@scroll-timeline footerScroll {
-  source: selector(.contact);
-}
-
-header {
-  animation: shrinkPadding linear both;
-  animation-timeline: headerScroll;
-}
-
-@keyframes shrinkPadding { 
-	0% { padding: 0px 0px 200px 0px; } 
-	90% { padding: 600px 0px 0px 0px; } 
-} 
-
-.contact {
-  animation: footerPadding linear both;
-  animation-timeline: footerScroll;
-}
-
-@keyframes footerPadding { 
-	0% { padding: 500px 0px 200px 0px; } 
-	100% { padding: 0px 0px 0px 0px; } 
-
